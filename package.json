@@ -2,15 +2,12 @@
   "name": "supabase-checker",
   "version": "0.1.0",
   "private": true,
-
-
-
   "scripts": {
     "dev": "next dev",
-    "build": "next build && opennextjs-cloudflare build",
-    "deploy": "wrangler deploy"
+    "build": "next build",
+    "build:cf": "opennextjs-cloudflare build",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
-
 
 
   "dependencies": {
