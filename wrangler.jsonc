@@ -1,9 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "supabase-checker",
+  "main": ".open-next/worker.js",
   "compatibility_date": "2026-09-13",
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "main": ".open-next/worker.js"
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  }
 }
